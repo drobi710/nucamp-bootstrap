@@ -172,7 +172,7 @@
               </a>
               <!-- carousel play/pause button linked to jQuery script -->
               <button class="btn btn-danger btn-sm" id="carouselButton">
-                  <i class="fa fa-pause"></i>
+                <i class="fa fa-pause"></i>
               </button>
           </div>
         </div>
@@ -264,21 +264,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- jQuery for play/pause carousel buttons and interval -->
-    <script>
-      $(function() {
-          $(".carousel").carousel( { interval: 2000 } );
-          $("#carouselButton").click(function(){
-              if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                  $(".carousel").carousel("pause");
-                  $("#carouselButton").children("i").removeClass("fa-pause");
-                  $("#carouselButton").children("i").addClass("fa-play");
-              } else {
-                  $(".carousel").carousel("cycle");
-                  $("#carouselButton").children("i").removeClass("fa-play");
-                  $("#carouselButton").children("i").addClass("fa-pause"); 
-              }
-          });
-      });
-    </script>
+    <script src="js/scripts.js">  </script>
+
   </body>
 </html>
